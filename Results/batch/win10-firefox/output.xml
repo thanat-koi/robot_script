@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20210101 20:44:56.021" rpa="false">
+<suite id="s1" name="Amazon" source="C:\Development\robot-script\amazon\tests\amazon.robot">
+<test id="s1-t1" name="User must sign in to check out">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.amazon.com</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20210101 20:44:56.526" level="INFO">Opening browser 'firefox' to base url 'http://www.amazon.com'.</msg>
+<msg timestamp="20210101 20:44:56.527" level="INFO">Firefox driver log is always forced to to: C:\Development\robot-script\amazon\results\batch\win10-firefox\geckodriver-3.log</msg>
+<status status="PASS" starttime="20210101 20:44:56.525" endtime="20210101 20:45:11.968"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>All</arg>
+</arguments>
+<status status="PASS" starttime="20210101 20:45:12.016" endtime="20210101 20:45:12.145"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+</arguments>
+<msg timestamp="20210101 20:45:12.146" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20210101 20:45:12.145" endtime="20210101 20:45:12.720"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=nav-search-submit-button</arg>
+</arguments>
+<msg timestamp="20210101 20:45:12.722" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20210101 20:45:12.721" endtime="20210101 20:45:19.232"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="search"]/div[1]/div[2]/div/span[3]/div[2]/div[1]/div/span/div/div/span/a/div/img</arg>
+</arguments>
+<msg timestamp="20210101 20:45:19.233" level="INFO">Clicking element 'xpath=//*[@id="search"]/div[1]/div[2]/div/span[3]/div[2]/div[1]/div/span/div/div/span/a/div/img'.</msg>
+<status status="PASS" starttime="20210101 20:45:19.233" endtime="20210101 20:45:23.582"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20210101 20:44:56.523" endtime="20210101 20:45:23.584" critical="yes"></status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20210101 20:44:56.023" endtime="20210101 20:45:23.591"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
