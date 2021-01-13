@@ -4,13 +4,13 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Search for Product
-    Go To  http://www.amazon.com
+    Go To  ${URL}
     Wait Until Page Contains  All
-    Input Text  id=twotabsearchtextbox  Ferrari 458
+    Input Text  id=twotabsearchtextbox   ${SEARCH}
     Click Button  id=nav-search-submit-button
 
 Select Product
-    Click element  xpath=//*[@id="search"]/div[1]/div[2]/div/span[3]/div[2]/div[1]/div/span/div/div/span/a/div/img
+    Click element  xpath=//div[@class='a-section aok-relative s-image-square-aspect']/img
     Wait Until Page Contains  Back to results
 
 Add Product to Cart

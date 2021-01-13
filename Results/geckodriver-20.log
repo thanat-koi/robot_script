@@ -1,0 +1,13 @@
+1610561852980	geckodriver	INFO	Listening on 127.0.0.1:49269
+1610561856045	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Koiko\\AppData\\Local\\Temp\\rust_mozprofilerKsU3H"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610561862509	Marionette	INFO	Listening on port 49277
+1610561863023	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610561863152	Marionette	INFO	Stopped listening on port 49277
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
